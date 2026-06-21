@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="index,follow" />
+  <title>サポート | こころのコンパス</title>
+  <meta name="description" content="iOSアプリ「こころのコンパス」のサポートページ" />
+  <style>
+    :root {
+      color-scheme: light dark;
+      --fg: #1c2433;
+      --bg: #f5f6fb;
+      --muted: #5a6173;
+      --accent: #4a5db0;
+      --border: #e0e3f0;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --fg: #e8eaf5;
+        --bg: #0a0c16;
+        --muted: #9aa0bf;
+        --accent: #8fa0ff;
+        --border: #20243a;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic UI", system-ui, sans-serif;
+      color: var(--fg);
+      background: var(--bg);
+      line-height: 1.75;
+      font-size: 16px;
+    }
+    main { max-width: 760px; margin: 0 auto; padding: 48px 24px 96px; }
+    h1, h2 { letter-spacing: 0.02em; }
+    h1 { font-size: 2rem; margin: 0 0 8px; }
+    h2 { font-size: 1.15rem; margin: 40px 0 8px; padding-bottom: 6px; border-bottom: 1px solid var(--border); }
+    .meta { color: var(--muted); font-size: 0.9rem; margin: 0 0 32px; }
+    .lang-switch { display: inline-flex; gap: 8px; font-size: 0.875rem; margin: 0 0 24px; }
+    .lang-switch a { color: var(--accent); text-decoration: none; border-bottom: 1px dotted var(--accent); }
+    ul { padding-left: 1.25em; }
+    li { margin: 4px 0; }
+    a { color: var(--accent); font-weight: 600; }
+    code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 0.95em; background: rgba(127,127,127,0.12); padding: 1px 6px; border-radius: 4px; }
+    hr { border: 0; border-top: 1px solid var(--border); margin: 56px 0 36px; }
+    footer { color: var(--muted); font-size: 0.8125rem; text-align: center; margin-top: 64px; }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="lang-switch">
+      <a href="#ja">日本語</a>
+      <a href="#en">English</a>
+    </div>
+
+    <h1>こころのコンパス サポート / Support</h1>
+    <p class="meta">最終更新日 / Last updated: 2026年6月21日</p>
+
+    <section id="ja">
+      <p>「こころのコンパス」は、大切な場所が今いる自分からどの方角・どれくらいの距離にあるかを、夜空のコンパスで静かに感じるアプリです。道案内をする地図アプリではなく、場所を眺めて、愛でて、集めるためのアプリです。使い方やトラブルについては以下をご覧ください。</p>
+
+      <h2>基本の使い方</h2>
+      <ul>
+        <li>「＋」から、旅の思い出・また行きたい場所・実家・推しの聖地などを登録します。地図で選ぶ・現在地・写真の位置情報から、いずれかの方法で場所を追加できます。</li>
+        <li>ホームの夜空コンパスに、登録した場所が星として現れ、今いる自分から見た方角と距離が表示されます。</li>
+        <li>目的地モードでは、大きな矢印で向かいたい場所の方角をまっすぐ指します。</li>
+        <li>場所の詳細では、写真・メモ・訪問日・その日の気分を添えて残せます。</li>
+      </ul>
+
+      <h2>方角がずれている / 正しく回らない</h2>
+      <p>方角は端末の磁気センサー（コンパス）を使用します。スピーカーや磁気を帯びた物の近く、車内・建物内では誤差が出やすくなります。端末を空中で「8の字」に動かすとコンパスが補正されます。なお本アプリの方角・距離はおおよその目安であり、登山・航海・緊急時の方位確認など安全に関わる用途には使用しないでください。</p>
+
+      <h2>場所が登録できない / 距離が出ない</h2>
+      <p>方角と距離の計算には現在地が必要です。iOS の「設定」→「プライバシーとセキュリティ」→「位置情報サービス」→「こころのコンパス」で、位置情報の利用が許可されているかご確認ください。</p>
+
+      <h2>写真から場所を取り込めない</h2>
+      <p>写真の取り込みには、写真ライブラリへのアクセス許可と、写真に位置情報（撮影場所）が含まれていることが必要です。設定アプリで写真へのアクセスをご確認ください。位置情報を含まない写真からは場所を取り込めません。</p>
+
+      <h2>購入を復元したい / Pro が解除されない</h2>
+      <p>設定（またはペイウォール）の「購入を復元」をタップしてください。購入時と同じ Apple ID でサインインしている必要があります。通信状態の良い場所で再度お試しいただき、改善しない場合は端末の再起動後にお試しください。Pro・テーマパックはいずれも買い切り（非消耗型）で、月額課金はありません。</p>
+
+      <h2>機種変更でデータを引き継ぎたい</h2>
+      <p>設定の「iCloudバックアップ」をオンにすると、登録した場所がご自身の iCloud（プライベートデータベース）に同期され、同じ Apple ID の端末間で引き継げます。</p>
+
+      <h2>ウィジェット / Apple Watch について</h2>
+      <p>ウィジェットはホーム画面・ロック画面を長押しして追加できます。Apple Watch アプリでは、夜空のコンパスと、登録した場所の方角を手首から確認できます（Pro 機能）。</p>
+
+      <h2>返金について</h2>
+      <p>App Store の購入は Apple により処理されます。返金を希望する場合は <a href="https://reportaproblem.apple.com/">reportaproblem.apple.com</a> をご利用ください。</p>
+
+      <h2>お問い合わせ</h2>
+      <p>解決しない場合は、以下のメールアドレスまでご連絡ください。端末名、iOS バージョン、アプリのバージョン、発生している状況を添えていただくと確認がスムーズです。</p>
+      <ul>
+        <li>メールアドレス: <a href="mailto:aka023035+kokorocompass@gmail.com"><code>aka023035+kokorocompass@gmail.com</code></a></li>
+      </ul>
+    </section>
+
+    <hr />
+
+    <section id="en">
+      <p>Kokoro Compass lets you quietly feel which direction your meaningful places lie in, and how far away they are, on a night-sky compass. It is not a turn-by-turn map app — it is for gazing at, cherishing, and collecting places.</p>
+
+      <h2>Getting started</h2>
+      <ul>
+        <li>Tap "+" to save a place — a travel memory, a place you want to revisit, your hometown, a fan pilgrimage spot. Add it by picking on the map, using your current location, or from a photo's location.</li>
+        <li>Saved places appear as stars on the night-sky compass, showing their direction and distance from where you are now.</li>
+        <li>Destination mode points a large arrow straight toward a chosen place.</li>
+        <li>In a place's detail, you can add photos, a memo, a visit date, and how you felt that day.</li>
+      </ul>
+
+      <h2>The direction looks off</h2>
+      <p>Direction uses your device's magnetometer (compass). Errors are more likely near speakers or magnetic objects, or inside cars and buildings. Moving the device in a figure-8 motion recalibrates the compass. Note that the direction and distance are approximate and must not be used for safety-critical purposes such as hiking, boating, or emergencies.</p>
+
+      <h2>Can't add a place / no distance shown</h2>
+      <p>Computing direction and distance requires your current location. Check that location access is allowed in iOS Settings → Privacy &amp; Security → Location Services → Kokoro Compass.</p>
+
+      <h2>Can't import from Photos</h2>
+      <p>Importing requires Photo Library access and photos that contain location (capture place) metadata. Photos without location data cannot be imported.</p>
+
+      <h2>Restore purchases / Pro not unlocked</h2>
+      <p>Tap "Restore Purchases" in Settings (or the paywall). You must be signed in with the same Apple ID used to purchase. Pro and the Theme Pack are one-time (non-consumable) purchases — there is no subscription.</p>
+
+      <h2>Move data to a new device</h2>
+      <p>Turn on "iCloud Backup" in Settings to sync your places to your own iCloud (private database), carried across devices on the same Apple ID.</p>
+
+      <h2>Refunds</h2>
+      <p>App Store purchases are handled by Apple. For refunds, please use <a href="https://reportaproblem.apple.com/">reportaproblem.apple.com</a>.</p>
+
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:aka023035+kokorocompass@gmail.com"><code>aka023035+kokorocompass@gmail.com</code></a> — please include your device, iOS version, app version, and what happened.</p>
+    </section>
+
+    <footer>
+      &copy; 2026 こころのコンパス (Kokoro Compass) &middot; <a href="../../">app-legal</a>
+    </footer>
+  </main>
+</body>
+</html>

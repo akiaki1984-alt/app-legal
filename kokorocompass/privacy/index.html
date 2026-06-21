@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="index,follow" />
+  <title>プライバシーポリシー | こころのコンパス</title>
+  <meta name="description" content="iOSアプリ「こころのコンパス」のプライバシーポリシー" />
+  <style>
+    :root {
+      color-scheme: light dark;
+      --fg: #1c2433;
+      --bg: #f5f6fb;
+      --muted: #5a6173;
+      --accent: #4a5db0;
+      --border: #e0e3f0;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --fg: #e8eaf5;
+        --bg: #0a0c16;
+        --muted: #9aa0bf;
+        --accent: #8fa0ff;
+        --border: #20243a;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic UI", system-ui, sans-serif;
+      color: var(--fg);
+      background: var(--bg);
+      line-height: 1.75;
+      font-size: 16px;
+    }
+    main { max-width: 760px; margin: 0 auto; padding: 48px 24px 96px; }
+    h1, h2 { letter-spacing: 0.02em; }
+    h1 { font-size: 2rem; margin: 0 0 8px; }
+    h2 { font-size: 1.15rem; margin: 40px 0 8px; padding-bottom: 6px; border-bottom: 1px solid var(--border); }
+    .meta { color: var(--muted); font-size: 0.9rem; margin: 0 0 32px; }
+    .meta b { color: var(--fg); font-weight: 600; }
+    .lang-switch { display: inline-flex; gap: 8px; font-size: 0.875rem; margin: 0 0 24px; }
+    .lang-switch a { color: var(--accent); text-decoration: none; border-bottom: 1px dotted var(--accent); }
+    ul { padding-left: 1.25em; }
+    li { margin: 4px 0; }
+    a { color: var(--accent); font-weight: 600; }
+    code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 0.95em; background: rgba(127,127,127,0.12); padding: 1px 6px; border-radius: 4px; }
+    hr { border: 0; border-top: 1px solid var(--border); margin: 64px 0 40px; }
+    footer { color: var(--muted); font-size: 0.8125rem; text-align: center; margin-top: 64px; }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="lang-switch">
+      <a href="#ja">日本語</a>
+      <a href="#en">English</a>
+    </div>
+
+    <h1>プライバシーポリシー / Privacy Policy</h1>
+    <p class="meta">
+      <b>アプリ名 / App:</b> こころのコンパス (Kokoro Compass)<br />
+      <b>提供者 / Provider:</b> 青木 一成 (Kazunari Aoki)<br />
+      <b>最終更新日 / Last updated:</b> 2026年6月21日
+    </p>
+
+    <section id="ja">
+      <p>iOSアプリ「こころのコンパス」(以下「本アプリ」) は、大切な場所が「今いる自分からどの方角に、どれくらい遠くにあるか」を夜空のコンパスで感じるためのメモリアプリです。本アプリはプライバシーを最優先に設計されており、入力・記録された情報は<strong>すべてお使いの端末内にのみ保存され、当社のサーバーには送信されません</strong>。本ポリシーは、本アプリが取り扱う情報について説明します。</p>
+
+      <h2>1. 収集しない情報</h2>
+      <p>本アプリは、以下を含むユーザー情報を<strong>収集しません</strong>。当社のサーバーへの送信も行いません。アカウント登録も不要です。</p>
+      <ul>
+        <li>氏名・メールアドレス・電話番号などの個人を特定する情報</li>
+        <li>広告識別子（IDFA）を用いた広告トラッキング</li>
+        <li>解析 SDK（Firebase Analytics、Google Analytics 等）による利用ログ</li>
+        <li>ユーザーの操作履歴・記録内容の外部送信</li>
+      </ul>
+
+      <h2>2. 位置情報の利用について</h2>
+      <p>本アプリは、登録した場所への<strong>方角と距離を計算するためだけ</strong>に現在地（GPS）を使用します。現在地は<strong>お使いの端末内でのみ処理され、当社のサーバーや第三者へ送信することはありません</strong>。位置情報を用いた行動追跡や広告配信は一切行いません。位置情報の利用許可は、iOS の「設定」からいつでも変更できます。</p>
+
+      <h2>3. 端末内にのみ保存される情報</h2>
+      <p>以下の情報は、お使いの iPhone 内（SwiftData / UserDefaults）に<strong>のみ</strong>保存され、当社のサーバーには一切送信されません。</p>
+      <ul>
+        <li>登録した場所（名称・緯度経度・カテゴリ・メモ・訪問日・気分・色など）</li>
+        <li>場所に添付した写真</li>
+        <li>テーマ・通知設定などのアプリ設定</li>
+      </ul>
+      <p><strong>アプリを削除すると、これらの記録もすべて端末から削除されます</strong>。Apple の iCloud バックアップ等の仕組みにより端末のバックアップに含まれることがあります（その取り扱いは Apple のポリシーに従います）。</p>
+
+      <h2>4. 写真の取り込みについて</h2>
+      <p>「写真マップ取り込み」などの機能を使う場合に限り、本アプリは写真ライブラリへのアクセス許可を求め、選択した写真に含まれる<strong>撮影場所（位置情報メタデータ）を読み取って場所を登録</strong>します。読み取りはすべて端末内で完結し、写真そのものや位置情報を外部に送信することはありません。</p>
+
+      <h2>5. iCloud バックアップ（任意）</h2>
+      <p>設定で「iCloudバックアップ」を有効にした場合に限り、上記の記録は<strong>ユーザー自身の iCloud アカウント</strong>（Apple CloudKit のプライベートデータベース）に同期・バックアップされ、同じ Apple ID の端末間で引き継げます。これらは Apple の iCloud に保存され、Apple のプライバシーポリシーに従って取り扱われます。当社（アプリ提供者）はこのデータにアクセスできません。この機能は既定では無効です。</p>
+
+      <h2>6. 通知について</h2>
+      <p>本アプリの通知（近くに登録した場所があるときのお知らせ等）は、端末内で完結する<strong>ローカル通知のみ</strong>を使用します。通知のためにサーバーと通信したり、情報を外部に送信したりすることはありません。通知は端末の設定からいつでもオフにできます。</p>
+
+      <h2>7. Apple Watch / ウィジェットについて</h2>
+      <p>Apple Watch アプリとは、Apple の WatchConnectivity を通じて端末間（iPhone と Watch）でのみ場所の情報を同期します。ウィジェットは App Group を通じて同一端末内のデータを表示します。いずれも当社のサーバーには送信されません。</p>
+
+      <h2>8. 地図表示について</h2>
+      <p>地図の表示には Apple の MapKit を使用します。地図タイルの取得にあたり、表示範囲などの情報が Apple へ送信されることがあります。これは Apple のプライバシーポリシーに従って Apple が取り扱います。</p>
+
+      <h2>9. App 内課金について</h2>
+      <p>本アプリの購入（Pro / テーマパックの買い切り）処理は Apple StoreKit を経由します。当社は購入者の Apple ID、クレジットカード情報、決済情報にアクセスできません。これらは Apple のプライバシーポリシーに従って Apple が取り扱います。</p>
+
+      <h2>10. 子どもの情報について</h2>
+      <p>本アプリは、13 歳未満の子どもから個人情報を収集することを意図していません。上記の通り、個人情報の収集自体を行いません。</p>
+
+      <h2>11. ポリシーの変更について</h2>
+      <p>本ポリシーは予告なく変更される場合があります。重要な変更がある場合は、アプリ内またはこのページにて告知します。</p>
+
+      <h2>12. お問い合わせ</h2>
+      <p>本ポリシーや本アプリのプライバシーに関するお問い合わせは、以下までご連絡ください。</p>
+      <ul>
+        <li>提供者: 青木 一成 (Kazunari Aoki)</li>
+        <li>メールアドレス: <a href="mailto:aka023035+kokorocompass@gmail.com"><code>aka023035+kokorocompass@gmail.com</code></a></li>
+      </ul>
+    </section>
+
+    <hr />
+
+    <section id="en">
+      <p>Kokoro Compass is a memory app that lets you feel which direction a meaningful place lies in and how far away it is, shown on a night-sky compass. It is designed privacy-first: <strong>everything you enter stays on your device and is never sent to our servers.</strong> No account is required.</p>
+
+      <h2>1. Data we do not collect</h2>
+      <ul>
+        <li>Personally identifiable information (name, email, phone)</li>
+        <li>Advertising identifiers (IDFA) or ad tracking</li>
+        <li>Third-party analytics SDKs</li>
+        <li>Any external transmission of your activity or records</li>
+      </ul>
+
+      <h2>2. Location</h2>
+      <p>The app uses your current location (GPS) <strong>only to compute the bearing and distance to the places you save</strong>. Your location is <strong>processed entirely on your device and is never sent to our servers or any third party.</strong> No location-based tracking or advertising is performed. You can change location permission anytime in iOS Settings.</p>
+
+      <h2>3. Data stored on your device only</h2>
+      <ul>
+        <li>Saved places (name, coordinates, category, memo, visit date, mood, color)</li>
+        <li>Photos you attach to a place</li>
+        <li>App settings (theme, notification preferences)</li>
+      </ul>
+      <p>Deleting the app removes this data from your device.</p>
+
+      <h2>4. Importing from Photos</h2>
+      <p>Only when you use features such as "import from Photos," the app requests Photo Library access and reads the <strong>capture location (location metadata) embedded in the selected photos</strong> to create places. This happens entirely on-device; neither the photos nor their location data are sent anywhere.</p>
+
+      <h2>5. iCloud Backup (optional)</h2>
+      <p>Only if you enable "iCloud Backup" in Settings, the above records are synced to <strong>your own iCloud account</strong> (Apple CloudKit private database) and carried across your devices. We cannot access this data; it is handled by Apple under its privacy policy. This feature is off by default.</p>
+
+      <h2>6. Notifications</h2>
+      <p>All notifications (e.g. when a saved place is nearby) are local (UNUserNotificationCenter). No push servers are used.</p>
+
+      <h2>7. Apple Watch / Widgets</h2>
+      <p>The Apple Watch app syncs place data only between your iPhone and Watch via WatchConnectivity. Widgets display same-device data via App Group. Nothing is sent to our servers.</p>
+
+      <h2>8. Maps</h2>
+      <p>Maps are displayed using Apple MapKit. To fetch map tiles, information such as the visible region may be sent to Apple, handled by Apple under its privacy policy.</p>
+
+      <h2>9. In-App Purchases</h2>
+      <p>Purchases (one-time Pro / Theme Pack) are processed by Apple StoreKit. We do not have access to your Apple ID or payment details.</p>
+
+      <h2>10. Children</h2>
+      <p>The app does not knowingly collect personal information from children under 13. As noted, it does not collect personal information at all.</p>
+
+      <h2>11. Contact</h2>
+      <p>Provider: Kazunari Aoki ／ Email: <a href="mailto:aka023035+kokorocompass@gmail.com"><code>aka023035+kokorocompass@gmail.com</code></a></p>
+    </section>
+
+    <footer>
+      &copy; 2026 こころのコンパス (Kokoro Compass) &middot; <a href="../../">app-legal</a>
+    </footer>
+  </main>
+</body>
+</html>
