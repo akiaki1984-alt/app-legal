@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="index,follow" />
+  <title>プライバシーポリシー | 兆し (Kizashi)</title>
+  <meta name="description" content="iOSアプリ「兆し (Kizashi)」のプライバシーポリシー" />
+  <style>
+    :root {
+      color-scheme: light dark;
+      --fg: #1c2433;
+      --bg: #f5f6fb;
+      --muted: #5a6173;
+      --accent: #c8794a;
+      --border: #e0e3f0;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --fg: #e8eaf5;
+        --bg: #0a0c16;
+        --muted: #9aa0bf;
+        --accent: #f0a86b;
+        --border: #20243a;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic UI", system-ui, sans-serif;
+      color: var(--fg);
+      background: var(--bg);
+      line-height: 1.75;
+      font-size: 16px;
+    }
+    main { max-width: 760px; margin: 0 auto; padding: 48px 24px 96px; }
+    h1, h2 { letter-spacing: 0.02em; }
+    h1 { font-size: 2rem; margin: 0 0 8px; }
+    h2 { font-size: 1.15rem; margin: 40px 0 8px; padding-bottom: 6px; border-bottom: 1px solid var(--border); }
+    .meta { color: var(--muted); font-size: 0.9rem; margin: 0 0 32px; }
+    .meta b { color: var(--fg); font-weight: 600; }
+    .lang-switch { display: inline-flex; gap: 8px; font-size: 0.875rem; margin: 0 0 24px; }
+    .lang-switch a { color: var(--accent); text-decoration: none; border-bottom: 1px dotted var(--accent); }
+    ul { padding-left: 1.25em; }
+    li { margin: 4px 0; }
+    a { color: var(--accent); font-weight: 600; }
+    code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 0.95em; background: rgba(127,127,127,0.12); padding: 1px 6px; border-radius: 4px; }
+    hr { border: 0; border-top: 1px solid var(--border); margin: 64px 0 40px; }
+    footer { color: var(--muted); font-size: 0.8125rem; text-align: center; margin-top: 64px; }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="lang-switch">
+      <a href="#ja">日本語</a>
+      <a href="#en">English</a>
+    </div>
+
+    <h1>プライバシーポリシー / Privacy Policy</h1>
+    <p class="meta">
+      <b>アプリ名 / App:</b> 兆し (Kizashi)<br />
+      <b>提供者 / Provider:</b> 青木 一成 (Kazunari Aoki)<br />
+      <b>最終更新日 / Last updated:</b> 2026年7月6日 (July 6, 2026)
+    </p>
+
+    <section id="ja">
+      <p>兆し (Kizashi)（以下「本アプリ」）は、iPhone にすでにある健康記録から、あなたにだけ当てはまる統計的なパターン（「兆し」）を静かに探し、小さなセルフチェックで確かめる手助けをする、<strong>完全に端末内で動くパーソナル発見アプリ</strong>です。アカウントもサーバーもなく、以下に記載する場合を除き、あなたのデータが端末から外に出ることはありません。本ポリシーは、本アプリが取り扱う情報について説明します。</p>
+
+      <h2>1. 収集しない情報</h2>
+      <p>本アプリは、以下を含むユーザー情報を<strong>収集しません</strong>。当社のサーバーへの送信も行いません。アカウント登録も不要です。</p>
+      <ul>
+        <li>氏名・メールアドレス・電話番号などの個人を特定する情報</li>
+        <li>広告識別子（IDFA）を用いた広告トラッキング</li>
+        <li>第三者の解析 SDK（Firebase Analytics、Google Analytics 等）による利用ログ</li>
+        <li>あなたの健康記録・操作履歴の外部送信</li>
+      </ul>
+
+      <h2>2. ヘルスケアデータ（Apple HealthKit）— 本アプリの中核入力</h2>
+      <p>あなたの許可がある場合に限り、本アプリは Apple の「ヘルスケア」から日々の健康指標を<strong>読み取り専用（本アプリがヘルスケアに書き込むことは決してありません）</strong>で取得します。対象となりうる指標には、睡眠（時間・段階・タイミング）、歩数、心拍数、心拍変動（HRV）、安静時心拍数、アクティブエネルギー、ワークアウト、呼吸数、手首の温度、日光を浴びた時間、体重などが含まれます。</p>
+      <p>これらはすべて<strong>相関を計算するためだけ</strong>に読み取られ、<strong>お使いの端末内で完結して処理</strong>されます。当社のサーバーや第三者に送信されることは<strong>一切ありません</strong>。各カテゴリの読み取り許可は、「ヘルスケア」アプリまたは iOS の「設定」からいつでも確認・取り消しできます。</p>
+
+      <h2>3. 天気（Apple WeatherKit）</h2>
+      <p>天気とあなたの体の記録に関係があるかを確かめるため、本アプリは Apple WeatherKit を通じて、おおよその位置に対応する天気データを取得することがあります。その際、天気を取得するために<strong>おおまかな位置・地域の情報が Apple へ送信されます</strong>。これは Apple のプライバシーポリシーに従って Apple が取り扱います。取得した天気は端末内での相関分析にのみ使用し、行動追跡や広告配信には一切使用しません。（この機能は任意であり、現在のバージョンでは既定でオフです。）</p>
+
+      <h2>4. カレンダー（Apple EventKit・任意）</h2>
+      <p>カレンダーへのアクセスを許可した場合に限り、本アプリは予定の<strong>件数や密度・時間帯</strong>（<strong>タイトルや内容ではありません</strong>）を読み取り、忙しさが睡眠や体調に関係しているかを確かめます。この処理は端末内で完結し、外部に送信されることはありません。アクセスは iOS の「設定」からいつでも取り消せます。</p>
+
+      <h2>5. 端末内にのみ保存される情報（SwiftData / UserDefaults）</h2>
+      <p>以下の情報は、お使いの iPhone 内に<strong>のみ</strong>保存され、当社のサーバーには一切送信されません。</p>
+      <ul>
+        <li>上記から算出した日々のサマリー</li>
+        <li>見つかった「兆し」（相関）</li>
+        <li>あなたのセルフチェック（「チェック」／ n-of-1 の小さな試し）</li>
+        <li>確かめられた発見（結果）</li>
+        <li>アプリの設定</li>
+      </ul>
+      <p><strong>アプリを削除すると、これらのデータも端末から削除されます</strong>。なお、あなたが作成する iCloud / iTunes の端末バックアップにこのデータが含まれることがあります（その取り扱いは Apple のポリシーに従います）。</p>
+
+      <h2>6. 受診用サマリー（PDF）</h2>
+      <p>本アプリは、あなたの発見をまとめた PDF を<strong>お使いの端末内で</strong>生成でき、必要に応じて医療従事者と共有できます。この PDF は端末内で作成され、<strong>あなた自身が iOS の共有シートから明示的に書き出した場合にのみ</strong>共有されます。当社がこれを受け取ることはありません。<strong>重要 — このサマリーおよび本アプリは、医学的診断ではなく、医療機器でもありません。</strong>本アプリが示すのは相関であって、原因ではありません。</p>
+
+      <h2>7. 通知について</h2>
+      <p>本アプリの通知（セルフチェックのチェックインのお知らせ等）は、端末内で完結する<strong>ローカル通知のみ</strong>を使用します。プッシュ用のサーバーは使用せず、外部への送信も行いません。通知は iOS の「設定」からいつでもオフにできます。</p>
+
+      <h2>8. App 内課金について</h2>
+      <p>本アプリの購入（月額／年額のサブスクリプション、および買い切りのライフタイム）処理は Apple StoreKit を経由します。当社は購入者の Apple ID、クレジットカード情報、決済情報にアクセスできません。これらは Apple のポリシーに従って Apple が取り扱います。</p>
+
+      <h2>9. 健康情報に関する注意（重要）</h2>
+      <p>兆し (Kizashi) は自己理解のためのツールであり、医療サービスではありません。いかなる疾患の診断・治療・予防も行いません。本アプリが示すのは統計的な相関であって、医学的な助言ではありません。医療上の判断については、必ず医療従事者にご相談ください。</p>
+
+      <h2>10. 子どもの情報について</h2>
+      <p>本アプリは、13 歳未満の子どもから個人情報を収集することを意図していません。上記の通り、個人情報の収集自体を行いません。</p>
+
+      <h2>11. ポリシーの変更について</h2>
+      <p>本ポリシーは予告なく変更される場合があります。重要な変更がある場合は、アプリ内またはこのページにて告知します。</p>
+
+      <h2>12. お問い合わせ</h2>
+      <p>本ポリシーや本アプリのプライバシーに関するお問い合わせは、以下までご連絡ください。</p>
+      <ul>
+        <li>提供者: 青木 一成 (Kazunari Aoki)</li>
+        <li>メールアドレス: <a href="mailto:aka023035+kizashi@gmail.com"><code>aka023035+kizashi@gmail.com</code></a></li>
+      </ul>
+    </section>
+
+    <hr />
+
+    <section id="en">
+      <p>Kizashi is a fully on-device personal discovery app. From the health records already on your iPhone, it quietly looks for statistical patterns ("signs") that hold true for you — and helps you verify them with small self-tests. There is no account, no server, and no data leaves your device except as described below. This policy explains how the app handles information.</p>
+
+      <h2>1. Data we do not collect</h2>
+      <p>The app does <strong>not</strong> collect the following, and does not transmit them to our servers. No account is required.</p>
+      <ul>
+        <li>Personally identifiable information (name, email, phone)</li>
+        <li>Advertising identifiers (IDFA) or ad tracking</li>
+        <li>Third-party analytics SDKs (no Firebase, Google Analytics, etc.)</li>
+        <li>Any external transmission of your health records or behavior</li>
+      </ul>
+
+      <h2>2. Health data (Apple HealthKit) — the core input</h2>
+      <p>With your permission, the app reads daily health metrics from Apple Health on a <strong>read-only basis — it never writes anything to Health</strong>. These may include sleep (duration, stages, timing), steps, heart rate, heart-rate variability (HRV), resting heart rate, active energy, workouts, respiratory rate, wrist temperature, time in daylight, and body mass.</p>
+      <p>All of this is read <strong>only to compute correlations</strong>, is processed <strong>entirely on your device</strong>, and is <strong>never sent to our servers or any third party</strong>. You can review or revoke each category anytime in the Health app or iOS Settings.</p>
+
+      <h2>3. Weather (Apple WeatherKit)</h2>
+      <p>To test whether weather relates to your body's records, the app may request weather data for your approximate location via Apple WeatherKit. To do so, <strong>coarse location / region information is sent to Apple</strong> to retrieve the weather; this is handled by Apple under Apple's privacy policy. It is used only for on-device correlation — never for tracking or advertising. (This is optional and off by default in the current version.)</p>
+
+      <h2>4. Calendar (Apple EventKit, optional)</h2>
+      <p>Only if you grant Calendar access, the app reads the <strong>number, density, and timing of your events</strong> — <strong>not their titles or contents</strong> — to test whether a busy schedule relates to your sleep or condition. This is processed on-device and never sent externally. You can revoke access anytime in iOS Settings.</p>
+
+      <h2>5. Data stored on your device only (SwiftData / UserDefaults)</h2>
+      <p>The following is stored <strong>only</strong> on your iPhone and is never sent to our servers:</p>
+      <ul>
+        <li>Daily summaries derived from the above</li>
+        <li>The discovered "signs" (correlations)</li>
+        <li>Your self-tests ("checks" / n-of-1 trials)</li>
+        <li>Your verified findings</li>
+        <li>App settings</li>
+      </ul>
+      <p><strong>Deleting the app removes this data from your device.</strong> Note that an iCloud/iTunes device backup you make may include this data, handled by Apple under Apple's policy.</p>
+
+      <h2>6. Doctor-visit summary (PDF)</h2>
+      <p>The app can generate, <strong>on your device</strong>, a PDF summary of your findings that you may choose to share with a healthcare professional. It is created locally and is only shared if <strong>you</strong> explicitly export it via the iOS share sheet. We never receive it. <strong>Important — this summary and the app are not a medical diagnosis and not a medical device.</strong> The app finds correlations, not causes.</p>
+
+      <h2>7. Notifications</h2>
+      <p>The app uses <strong>local notifications only</strong> (e.g. check-in reminders for a self-test). No push servers are used and nothing is sent externally. You can turn them off in iOS Settings.</p>
+
+      <h2>8. In-App Purchases</h2>
+      <p>Purchases — monthly and yearly subscriptions, and a one-time lifetime purchase — are processed by Apple StoreKit. We do not have access to your Apple ID, card, or payment details; Apple handles these under its policy.</p>
+
+      <h2>9. Health information disclaimer (important)</h2>
+      <p>Kizashi is a self-knowledge tool, not a medical service. It does not diagnose, treat, or prevent any condition, and its findings are statistical correlations, not medical advice. Consult a healthcare professional for medical decisions.</p>
+
+      <h2>10. Children</h2>
+      <p>The app does not knowingly collect personal information from children under 13. As noted above, it does not collect personal information at all.</p>
+
+      <h2>11. Changes to this policy</h2>
+      <p>This policy may change without notice. Material changes will be announced in the app or on this page.</p>
+
+      <h2>12. Contact</h2>
+      <p>Provider: Kazunari Aoki ／ Email: <a href="mailto:aka023035+kizashi@gmail.com"><code>aka023035+kizashi@gmail.com</code></a></p>
+    </section>
+
+    <footer>
+      &copy; 2026 兆し (Kizashi) &middot; <a href="../../">app-legal</a>
+    </footer>
+  </main>
+</body>
+</html>
