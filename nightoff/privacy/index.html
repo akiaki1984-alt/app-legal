@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index,follow">
+  <meta name="theme-color" content="#080d1d">
+  <title>プライバシーポリシー / Privacy Policy — Night Off</title>
+  <meta name="description" content="Night Offのプライバシーポリシー">
+  <style>
+    :root { color-scheme:dark; --bg:#080d1d; --surface:#161e35; --text:#fff7e9; --muted:#b8bfd2; --moon:#ffd579; --line:#2a3555; }
+    * { box-sizing:border-box; } html { scroll-behavior:smooth; }
+    body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Helvetica Neue",Arial,sans-serif; color:var(--text); background:var(--bg); line-height:1.78; }
+    main { width:min(760px,calc(100% - 40px)); margin:auto; padding:48px 0 96px; }
+    a { color:var(--moon); } .switch { display:flex; gap:16px; margin-bottom:30px; font-weight:700; }
+    h1 { font-size:clamp(2rem,7vw,3rem); line-height:1.15; letter-spacing:-.035em; margin:0 0 12px; }
+    h2 { font-size:1.17rem; margin:38px 0 8px; padding-top:18px; border-top:1px solid var(--line); }
+    .meta,.muted { color:var(--muted); } .meta { margin:0 0 34px; }
+    section { background:linear-gradient(180deg,#161e3599,transparent 22%); border-radius:22px; padding:24px; margin-top:26px; }
+    ul { padding-left:1.25rem; } li { margin:.3rem 0; } hr { border:0; border-top:1px solid var(--line); margin:64px 0; }
+    footer { text-align:center; color:var(--muted); font-size:.85rem; margin-top:64px; }
+  </style>
+</head>
+<body>
+<main>
+  <nav class="switch" aria-label="Language"><a href="#ja">日本語</a><a href="#en">English</a><a href="../">トップ</a></nav>
+  <h1>プライバシーポリシー<br><span class="muted">Privacy Policy</span></h1>
+  <p class="meta">アプリ / App: Night Off<br>提供者 / Provider: 青木 一成 (Kazunari Aoki)<br>最終更新日 / Last updated: 2026年7月14日 / July 14, 2026</p>
+
+  <section id="ja">
+    <p>Night Off（以下「本アプリ」）は、自分のiPhoneで選択したアプリ、カテゴリー、Webドメインの夜間利用を管理するためのアプリです。本アプリはプライバシーを重視して設計されており、バージョン1.0では<strong>開発者が運営するサーバーへユーザーデータを送信しません</strong>。</p>
+    <h2>1. AppleのScreen Time機能</h2>
+    <p>本アプリは、AppleのFamily Controls、Managed Settings、Device ActivityなどのScreen Time関連機能を使用します。利用者は自分の端末で個人利用の許可を行い、AppleのFamily Activity Pickerで制限対象を選択します。</p>
+    <p>選択内容はAppleのプライバシー保護された不透明な識別子として端末上で扱われます。本アプリは、その識別子から具体的なアプリ名、Bundle ID、ドメイン名を抽出せず、外部に送信しません。</p>
+    <h2>2. 端末上で扱う情報</h2>
+    <p>機能提供のため、以下の情報を端末内に保存する場合があります。</p>
+    <ul>
+      <li>開始・終了時刻、スケジュールの有効状態、通知設定</li>
+      <li>Screen Timeの許可状態と制限スケジュールの状態</li>
+      <li>Family Activity Pickerから受け取った選択識別子</li>
+      <li>3晩体験の進行状態と重複計上を防ぐ識別子</li>
+      <li>直近30夜の実行履歴、スキップ状態、一時解除回数</li>
+      <li>一時解除時に選んだ理由</li>
+      <li>StoreKitで検証した購入権利の状態</li>
+      <li>動作診断のための最小限のローカルログ</li>
+    </ul>
+    <p>本体アプリと機能拡張は、同じApp Group内の保存領域を使用します。3晩体験の繰り返しを抑えるため、完了晩数の最小限の情報がiOS Keychainに残る場合があります。</p>
+    <h2>3. 収集しない情報</h2>
+    <p>開発者は、閲覧した動画やWebページ、メッセージ内容、写真、連絡先、正確な位置情報、広告識別子、閲覧履歴、選択識別子が表す具体的なアプリ名やドメインを収集しません。バージョン1.0には、広告SDK、分析SDK、トラッキングSDK、ユーザーアカウント、開発者バックエンドはありません。</p>
+    <h2>4. Appleのサービス</h2>
+    <p>購入、購入の復元、サブスクリプション管理にはAppleのApp StoreおよびStoreKitが使用され、Appleの規約とプライバシーポリシーが適用されます。本アプリは購入権利を端末上で検証し、レシートや支払情報を開発者サーバーへ送信しません。</p>
+    <p>通知を許可した場合、端末上でローカル通知を設定します。開発者サーバーからのプッシュ通知は使用しません。</p>
+    <h2>5. 保存期間と削除</h2>
+    <p>夜の履歴は原則として直近30夜分を端末上に保存します。設定から履歴を削除できます。アプリを削除すると多くのローカルデータは削除されますが、iOSの仕様により最小限の体験状態がKeychainに残る場合があります。Screen Timeの許可はiOSの設定から取り消せます。</p>
+    <h2>6. セキュリティ</h2>
+    <p>本アプリは、iOSのアプリサンドボックス、App Groupコンテナ、Keychainなどのプラットフォーム保護を利用します。ただし、いかなる保存方法にも絶対的な安全性はありません。</p>
+    <h2>7. 子どもの利用</h2>
+    <p>本アプリは、保護者が子どもの端末を監視することを主目的としていません。本人が自分の端末に許可する個人利用の仕組みを使用します。</p>
+    <h2>8. 変更とお問い合わせ</h2>
+    <p>本ポリシーを変更する場合は、更新日と変更後の内容をこのページまたはアプリ内で案内します。ご質問は <a href="mailto:akiaki1984@gmail.com">akiaki1984@gmail.com</a> までご連絡ください。</p>
+  </section>
+
+  <hr>
+  <section id="en" lang="en">
+    <p>Night Off (the “App”) helps you manage nighttime access to apps, categories, and web domains that you select on your own iPhone. The App is designed with privacy in mind. Version 1.0 <strong>does not transmit user data to a developer-operated server</strong>.</p>
+    <h2>1. Apple Screen Time features</h2>
+    <p>The App uses Apple’s Screen Time technologies, including Family Controls, Managed Settings, and Device Activity. You authorize individual access on your device and select activities through Apple’s Family Activity Picker.</p>
+    <p>Apple represents selections with privacy-preserving opaque identifiers. The App does not extract app names, bundle identifiers, or domain names from those identifiers and does not send them off device.</p>
+    <h2>2. Information handled on your device</h2>
+    <p>The App may store schedule and notification settings, Screen Time authorization and restriction state, opaque selection identifiers, the three-night experience state, up to 30 recent nights of local history, temporary-unlock counts and selected reasons, verified StoreKit entitlement state, and minimal diagnostic logs.</p>
+    <p>The containing App and its extensions share storage only inside their App Group. A minimal completed-night value may remain in iOS Keychain to discourage repeatedly resetting the three-night experience.</p>
+    <h2>3. Information we do not collect</h2>
+    <p>We do not collect videos or pages viewed, message content, photos, contacts, precise location, advertising identifiers, browsing history, or the specific apps and domains represented by selection identifiers. Version 1.0 contains no ads, analytics or tracking SDK, user account, or developer backend.</p>
+    <h2>4. Apple services</h2>
+    <p>Apple’s App Store and StoreKit process purchases, restores, and subscription management under Apple’s terms and privacy policy. Entitlements are verified on device. We do not transmit receipts or payment details to a developer server. Notifications are local notifications; no developer push server is used.</p>
+    <h2>5. Retention and deletion</h2>
+    <p>The App generally keeps up to 30 recent nights of history on device. You can delete history in Settings and revoke Screen Time authorization in iOS. Deleting the App removes most local data, although a minimal experience-state value may remain in Keychain because of iOS behavior.</p>
+    <h2>6. Security</h2>
+    <p>The App relies on platform protections including the iOS sandbox, App Group container, and Keychain. No storage method can guarantee absolute security.</p>
+    <h2>7. Children</h2>
+    <p>The App is not primarily designed for a parent to monitor a child’s device. It uses individual authorization by a person on their own device.</p>
+    <h2>8. Changes and contact</h2>
+    <p>If this policy changes, we will publish the updated date and terms on this page or in the App. Questions: <a href="mailto:akiaki1984@gmail.com">akiaki1984@gmail.com</a>.</p>
+  </section>
+  <footer>© 2026 Night Off · <a href="../terms/">Terms</a> · <a href="../support/">Support</a></footer>
+</main>
+</body>
+</html>
