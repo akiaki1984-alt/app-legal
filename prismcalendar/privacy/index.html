@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Prism Calendar プライバシーポリシー</title>
+<style>
+  body{font-family:-apple-system,"Hiragino Kaku Gothic ProN",sans-serif;line-height:1.8;color:#242433;background:#f3f2fb;margin:0;padding:24px}
+  .wrap{max-width:720px;margin:0 auto;background:#fff;border-radius:16px;padding:32px 28px;box-shadow:0 2px 12px rgba(0,0,0,.06)}
+  h1{font-size:1.5rem;color:#5b46c9;margin-top:0}
+  h2{font-size:1.1rem;color:#5b46c9;margin-top:1.8em;border-bottom:1px solid #e6e3f4;padding-bottom:.3em}
+  a{color:#6f5bd6}
+  .muted{color:#726f88;font-size:.9rem}
+  ul{padding-left:1.2em}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>Prism Calendar プライバシーポリシー</h1>
+<p class="muted">最終更新日: 2026年7月23日</p>
+
+<p>Prism Calendar（以下「本アプリ」）は、ユーザーのプライバシーを最優先に設計されています。本アプリは<strong>すべての処理をお使いの端末内で完結</strong>させ、予定やタスクの内容を当社（開発者）のサーバーへ送信することはありません。本アプリの利用にアカウント登録は不要です（Google／Microsoft カレンダー連携は任意機能です。下記 4 をご覧ください）。</p>
+
+<h2>1. 収集する情報</h2>
+<p>本アプリは、開発者が管理するサーバーへユーザーの個人情報を送信・収集しません。広告識別子（IDFA）を含む、ユーザーをトラッキングするための情報も取得しません。</p>
+<ul>
+<li><strong>予定・タスク</strong>：iOS 標準のカレンダー／リマインダー（Apple の EventKit）に保存されます。本アプリはこれらを表示・編集するために OS 経由でアクセスするだけで、外部へ送信しません。</li>
+<li><strong>表示設定</strong>：テーマ・表示密度・週の開始曜日・週番号などの設定は、端末内の UserDefaults に保存されます。ウィジェットや Apple Watch と共有する設定・表示用スナップショットは、同一の App Group（同じ端末内の共有領域）に保存されます。いずれも端末外へ出ません。</li>
+</ul>
+
+<h2>2. 位置情報について</h2>
+<p>本アプリは、次の場合にのみ位置情報を扱います。いずれもユーザーの操作を起点とし、既定では無効です。</p>
+<ul>
+<li><strong>天気（現在地モード）</strong>：後述 3 のとおり、設定で「現在地の天気」を有効にした時にのみ位置情報の許可を求めます。取得した現在地は Apple の天気サービス（WeatherKit）へ予報の取得のために渡されます。</li>
+<li><strong>予定の場所を地図で表示</strong>：予定に登録された場所を地図で確認する機能です。地図表示は Apple の地図サービスを利用します。</li>
+</ul>
+<p>位置情報を許可しなくても、天気以外のすべてのカレンダー機能はそのままご利用いただけます。</p>
+
+<h2>3. 天気（WeatherKit）について</h2>
+<p>天気表示は<strong>既定で無効</strong>です。設定で有効にした場合にのみ、Apple の天気サービス（WeatherKit）から日別予報を取得します。</p>
+<ul>
+<li><strong>現在地モード</strong>：許可された現在地の座標を、予報取得のために Apple（WeatherKit）へ渡します。</li>
+<li><strong>都市指定モード</strong>：入力された都市名を Apple の地名検索（CLGeocoder）で座標に変換し、その座標を予報取得のために Apple（WeatherKit）へ渡します。</li>
+</ul>
+<p>これらの通信は Apple のサービスとの間で行われ、Apple のプライバシー方針が適用されます。当社（開発者）のサーバーを経由することはありません。取得した予報は端末内に一時キャッシュされるのみです。</p>
+
+<h2>4. Google／Microsoft カレンダー連携について（任意・Pro）</h2>
+<p>ご希望の場合のみ、Google カレンダーや Microsoft（Outlook）カレンダーと同期できます。この機能には、<strong>ユーザーご自身が Google Cloud Console／Microsoft Entra（Azure）で作成した OAuth クライアント ID</strong> の設定が必要です。</p>
+<ul>
+<li>認証は、iOS 標準の安全なブラウザ認証（OAuth 2.0 / PKCE）で行います。クライアントシークレットは使用しません。</li>
+<li>同期は、<strong>ユーザーの端末と Google／Microsoft のサーバーとの間で直接</strong>行われます。当社（開発者）のサーバーがカレンダーの内容や認証情報を受け取ることはありません。</li>
+<li>アクセストークン・リフレッシュトークンは、<strong>端末内の Keychain にのみ</strong>保存されます（この端末限定の保護属性を用いるため、暗号化バックアップ経由でも他の端末へ複製されません）。トークンの値がログや画面に表示されることはありません。</li>
+<li>連携はいつでも設定画面から解除でき、解除するとそのアカウントのトークンは端末から削除されます。</li>
+</ul>
+
+<h2>5. 課金について</h2>
+<p>「Prism Pro」（買い切り・年額・月額）の購入は、Apple の App Store（StoreKit）を通じて処理されます。お支払い情報は Apple が管理し、本アプリが取得・保存することはありません。</p>
+
+<h2>6. 通知</h2>
+<p>予定・タスクのリマインダーやまとめ通知は、すべて端末内で生成されるローカル通知です。通知の内容が外部へ送信されることはありません。通知の許可は任意です。</p>
+
+<h2>7. 第三者・トラッキング</h2>
+<p>本アプリは、広告 SDK・解析（アナリティクス）SDK・トラッキング技術を一切使用していません。ユーザーをトラッキングせず、IDFA 等も取得しません。App Store のプライバシー情報（プライバシーマニフェスト）でも「トラッキングなし・収集データなし」として申告しています（端末内設定の保存に UserDefaults を用いる旨のみを必須理由 API として申告）。</p>
+
+<h2>8. データの削除</h2>
+<ul>
+<li>予定・タスクは、本アプリまたは iOS 標準のカレンダー／リマインダーから削除できます。本アプリで削除した予定は「ゴミ箱」に一定期間保管され、期限を過ぎると消去されます。</li>
+<li>本アプリを端末から削除すると、本アプリが保存した設定・キャッシュ・トークンは端末から削除されます。iOS 標準のカレンダー／リマインダーに保存された予定・タスクは、それぞれのアプリ／アカウント側に残ります。</li>
+</ul>
+
+<h2>9. お問い合わせ</h2>
+<p>本ポリシーに関するご質問は下記までご連絡ください。<br>
+メール: <a href="mailto:akiaki1984@gmail.com">akiaki1984@gmail.com</a></p>
+
+<h2>10. 変更</h2>
+<p>本ポリシーは必要に応じて改定されることがあります。重要な変更がある場合は本ページで告知します。</p>
+</div>
+</body>
+</html>

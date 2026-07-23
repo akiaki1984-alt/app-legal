@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Prism Calendar サポート</title>
+<style>
+  body{font-family:-apple-system,"Hiragino Kaku Gothic ProN",sans-serif;line-height:1.8;color:#242433;background:#f3f2fb;margin:0;padding:24px}
+  .wrap{max-width:720px;margin:0 auto;background:#fff;border-radius:16px;padding:32px 28px;box-shadow:0 2px 12px rgba(0,0,0,.06)}
+  h1{font-size:1.5rem;color:#5b46c9;margin-top:0}
+  h2{font-size:1.05rem;color:#5b46c9;margin-top:1.6em}
+  a{color:#6f5bd6}
+  .muted{color:#726f88;font-size:.9rem}
+  .q{font-weight:600;margin-top:1.2em}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>Prism Calendar サポート</h1>
+<p>ご利用ありがとうございます。よくあるご質問と、お問い合わせ先をご案内します。</p>
+
+<h2>よくある質問</h2>
+
+<p class="q">Q. 予定が表示されません。</p>
+<p>本アプリは iPhone 標準のカレンダー（EventKit）の予定を表示します。初回起動時に表示される「カレンダーへのアクセス許可」を許可してください。拒否した場合は、iOS の「設定」アプリ &gt; Prism Calendar から許可を有効にできます。</p>
+
+<p class="q">Q. テーマや表示密度を変えたい。</p>
+<p>設定から、6 種類のテーマと 4 段階の表示密度（ゆったり・標準・コンパクト・超高密度）を選べます。ライト／ダークにも対応しています。全 6 テーマは Prism Pro で解放されます。</p>
+
+<p class="q">Q. 文章から予定を作りたい（クイック入力）。</p>
+<p>新規作成のクイック入力に「明日 15 時 打ち合わせ」のように入力すると、日付・時刻を自動で読み取ります。繰り返し・通知・場所まで文章から反映する詳細解析は Prism Pro で利用できます。</p>
+
+<p class="q">Q. Google／Microsoft カレンダーと同期したい。</p>
+<p>「設定 &gt; アカウント」から連携できます（Prism Pro）。この機能には、ご自身で作成した OAuth クライアント ID が必要です。<br>
+・Google: Google Cloud Console で「認証情報」→「OAuth クライアント ID」→ 種類「iOS」→ バンドル ID に <code>com.aokiissei.prismcalendar</code> を入力し、発行された ID を設定画面に貼り付けます。<br>
+・Microsoft: Microsoft Entra（Azure）でアプリを登録し、発行されたアプリケーション（クライアント）ID を設定画面に貼り付けます。<br>
+同期はお使いの端末と各サービスの間で直接行われ、認証情報は端末内の Keychain にのみ保存されます。</p>
+
+<p class="q">Q. 天気を表示したい。</p>
+<p>「設定 &gt; 天気」から有効にできます（既定は無効）。「現在地」を選ぶと位置情報の許可を求めます。「都市を指定」を選ぶと、入力した都市の予報を表示します。天気は Apple の WeatherKit を利用します。取得できない場合もカレンダー表示には影響しません。</p>
+
+<p class="q">Q. 削除した予定を元に戻したい。</p>
+<p>本アプリで削除した予定は「ゴミ箱」に一定期間保管され、そこから復元できます。期限を過ぎると自動的に消去されます。</p>
+
+<p class="q">Q. ICS ファイルを取り込みたい／書き出したい。</p>
+<p>ICS ファイルの取り込み（プレビューで確認してから登録）は無料でご利用いただけます。ICS の書き出しと暗号化バックアップは Prism Pro で利用できます。</p>
+
+<p class="q">Q. ウィジェットや Apple Watch を使いたい。</p>
+<p>ホーム画面・ロック画面のウィジェット、Apple Watch アプリとウィジェットに対応しています。ウィジェットはホーム画面／ロック画面の編集から追加できます。</p>
+
+<p class="q">Q. Prism Pro で何が使えますか？ 料金は？</p>
+<p>全 6 テーマ、Google／Microsoft アカウント連携、クイック入力の詳細解析、複数選択の一括操作、プランナー（空き時間・タイムブロック・バランス）、暗号化バックアップ／ICS 書き出しが解放されます。買い切り（¥3,000）、年額（¥1,800）、月額（¥300）からお選びいただけます。</p>
+
+<p class="q">Q. 購入を復元したい／機種変更しました。</p>
+<p>設定の「購入を復元」から、同じ Apple ID で復元できます。</p>
+
+<p class="q">Q. サブスクリプションを解約したい。</p>
+<p>iOS の「設定 &gt; Apple ID &gt; サブスクリプション」から、次回更新日の 24 時間前までに解約してください。買い切りは自動更新されないため、解約は不要です。</p>
+
+<h2>お問い合わせ</h2>
+<p>解決しない場合は、以下までお気軽にご連絡ください。<br>
+メール: <a href="mailto:akiaki1984@gmail.com">akiaki1984@gmail.com</a></p>
+<p class="muted">関連: <a href="../privacy/">プライバシーポリシー</a> ・ <a href="../terms/">利用規約</a></p>
+</div>
+</body>
+</html>
