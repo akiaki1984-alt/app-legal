@@ -1,0 +1,18 @@
+:root{--bg:#070B14;--card:#121A29;--fg:#F7F8FC;--muted:#9EA8BA;--border:rgba(255,255,255,.08);--accent:#A35BFF}
+*{box-sizing:border-box}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Hiragino Kaku Gothic ProN","Hiragino Sans",system-ui,sans-serif;
+  background:var(--bg);color:var(--fg);line-height:1.8;padding:40px 20px}
+.wrap{max-width:720px;margin:0 auto}
+.card{background:var(--card);border:1px solid var(--border);border-radius:20px;padding:32px 26px}
+h1{font-size:1.6rem;margin:0 0 6px}
+h2{font-size:1.05rem;margin:30px 0 8px;color:var(--accent)}
+h3{font-size:.95rem;margin:22px 0 4px}
+.lede{color:var(--muted);margin:0 0 22px}
+.ja{color:var(--muted);font-size:.9rem}
+ul{padding-left:1.2em;margin:8px 0}
+li{margin:4px 0}
+a{color:var(--accent)}
+.nav{margin:0 0 24px;font-size:.85rem}
+.nav a{margin-right:14px;text-decoration:none}
+footer{color:var(--muted);font-size:.82rem;text-align:center;margin-top:22px}
+.updated{color:var(--muted);font-size:.82rem;margin-top:26px}
