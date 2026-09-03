@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SIGNAL ARCHIVE — Demo Video for App Review</title>
+<style>
+  body{font-family:-apple-system,"Hiragino Kaku Gothic ProN",sans-serif;line-height:1.8;color:#E8ECF4;background:#0B0F17;margin:0;padding:24px}
+  .wrap{max-width:820px;margin:0 auto;background:#141B29;border:1px solid #223047;border-radius:4px;padding:32px 28px}
+  h1{font-size:1.4rem;color:#4CC9E8;margin-top:0}
+  h2{font-size:1.02rem;color:#3FBF8F;margin-top:2em;border-bottom:1px solid #223047;padding-bottom:.35em}
+  video{width:100%;max-width:420px;display:block;margin:1em auto;border:1px solid #223047;border-radius:8px;background:#000}
+  .muted{color:#8A94A8;font-size:.92rem}
+  ol,ul{padding-left:1.3em}
+  li{margin:.45em 0}
+  strong{color:#E8ECF4}
+  .note{background:#0f1725;border-left:3px solid #E8B44C;padding:12px 16px;margin:1.4em 0}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>SIGNAL ARCHIVE — Demo Video for App Review</h1>
+<p class="muted">Submission ID: a6d4e878-99cb-4054-bde2-109bc419ec85 &nbsp;|&nbsp; Version 1.0 (1)<br>
+Recorded on a <strong>physical iPhone 16 Pro Max (iOS 26.6.1)</strong> and a paired
+<strong>Apple Watch SE 3</strong> — not a simulator.</p>
+
+<div class="note">
+<strong>There is no designated hardware.</strong> This app does not pair with, connect to,
+or require any external accessory. Core Bluetooth is used in <strong>scan-only</strong> mode to
+count how many Bluetooth advertisements are detectable nearby; that count becomes an
+ambient "signal density" value in the game. The app never calls <code>connect()</code>,
+never exchanges data, and never stores peripheral names or identifiers.
+</div>
+
+<h2>1. iPhone — full workflow</h2>
+<video controls preload="metadata" src="iphone.mp4"></video>
+<ol>
+  <li><strong>0:00</strong> — Location permission primer, then the system prompt. Granted.</li>
+  <li><strong>0:18</strong> — HOME on the physical device. <code>RESONANCE DETECTED</code>, research at 0%.</li>
+  <li><strong>0:20</strong> — SCAN tab. The Bluetooth primer states plainly:
+      <em>“counts only the number of nearby Bluetooth signals; device names and identifiers are
+      never displayed or stored.”</em> Then the system prompt. Granted —
+      <strong>note that no pairing sheet appears, because there is nothing to pair with.</strong></li>
+  <li><strong>0:33</strong> — A 15-second scan. Watch the rows <code>SIGNAL_9ACA</code>,
+      <code>SIGNAL_17B6</code>, <code>SIGNAL_2B15</code>… accumulate. These are anonymous counters
+      for advertisements detected in the room, not connections. Nothing is paired, read, or written.</li>
+  <li><strong>0:51</strong> — An artifact fragment is found (R-001) and analyzed. Its form and
+      record are restored to 30%.</li>
+  <li><strong>0:56</strong> — The archive grid (1 / 125) and the artifact detail screen, including
+      the DATA tab.</li>
+  <li><strong>1:28</strong> — MENU → CONTINUE RESEARCH → the in-app purchase sheet. One
+      non-consumable product, priced in the storefront of the signed-in account.</li>
+</ol>
+
+<h2>2. Apple Watch — optional companion</h2>
+<video controls preload="metadata" src="watch.mp4"></video>
+<p class="muted">Filmed with a camera so that the physical Apple Watch itself is visible,
+as requested.</p>
+<ul>
+  <li><strong>0:03</strong> — The companion app on the physical Apple Watch, already in sync with
+      the iPhone (<code>SCAN READY</code>, research 32%, the latest artifact listed).</li>
+  <li><strong>0:10</strong> — The three scan bands (WIDE / FOCUS / DEEP) with their odds meters.</li>
+  <li><strong>0:18</strong> — The Bluetooth permission prompt on the Watch. Again,
+      <strong>no pairing sheet</strong> — the Watch scans for ambient advertisements only.</li>
+  <li><strong>0:26 → 0:34</strong> — <code>15 SIGNALS</code> rising to <code>19 SIGNALS</code>
+      during the scan. This is the clearest illustration of what the Bluetooth permission is for:
+      the app is counting, not connecting.</li>
+</ul>
+<p class="muted">The Apple Watch is paired to the iPhone by the user through the standard Watch
+app; our app performs no pairing of its own and adds no accessory.</p>
+<p class="muted">The Apple Watch is optional. The iPhone app is complete without it.</p>
+
+<h2>Reaching the paid content</h2>
+<p>Completing Layer 0 normally takes several days of walking, so there is a permanent
+shortcut: <strong>MENU tab → “CONTINUE RESEARCH”</strong>. It is always visible regardless of
+progress and leads straight to the purchase sheet. There is one non-consumable product only.</p>
+<p>The first three scans after a fresh install always yield a fragment, so the whole
+<em>scan → discover → analyze</em> loop can be verified indoors, standing still.</p>
+
+<h2>Permissions</h2>
+<ul>
+  <li><strong>Location (When In Use)</strong> — resolves an approximately 153 m sector. Coordinates are
+      converted to a sector symbol and discarded immediately; no history is kept.</li>
+  <li><strong>Bluetooth</strong> — counts nearby advertisements only, as described above.</li>
+  <li><strong>Access WiFi Information</strong> — reads only the currently joined network name, for the
+      “home base” feature. It is hashed on device and never leaves it.</li>
+</ul>
+<p class="muted">All three are optional. With any of them denied, scanning, analysis and the
+archive all continue to work. There is no sign-in and no account, so no demo account is needed.</p>
+</div>
+</body>
+</html>
