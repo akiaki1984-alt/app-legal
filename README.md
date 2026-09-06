@@ -6,6 +6,10 @@ GitHub Pages として公開されます。
 
 ## 構成
 
+- `faultcam/` — FAULTCAM 法務・サポート入口
+- `faultcam/privacy/` — FAULTCAM プライバシーポリシー
+- `faultcam/terms/` — FAULTCAM 利用規約
+- `faultcam/support/` — FAULTCAM サポート
 - `bodyforecast/` — からだ予報 法務・サポート入口
 - `bodyforecast/privacy/` — からだ予報 プライバシーポリシー
 - `bodyforecast/terms/` — からだ予報 利用規約
