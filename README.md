@@ -19,6 +19,10 @@ GitHub Pages として公開されます。
 - `seionbiyori/privacy/` — 静音日和 プライバシーポリシー
 - `seionbiyori/terms/` — 静音日和 利用規約
 - `seionbiyori/support/` — 静音日和 サポート
+- `poteneko/` — ぽてねこ 法務・サポート入口
+- `poteneko/privacy/` — ぽてねこ プライバシーポリシー
+- `poteneko/terms/` — ぽてねこ 利用規約
+- `poteneko/support/` — ぽてねこ サポート
 
 ## 編集方法
 
